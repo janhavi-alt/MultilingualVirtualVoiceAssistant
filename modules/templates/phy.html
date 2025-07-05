@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Physics Voice Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='phy.css') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Physics Voice Assistant</h1>
+    <p>Ask me any Physics-related question and I will answer!</p>
+
+    <button id="start-btn" class="listen-btn" aria-label="Start voice input">
+      <i class="fa fa-microphone"></i>
+    </button>
+
+    <div id="response-container">
+      <p id="response">Your answer will appear here...</p>
+    </div>
+
+    <div class="actions" style="margin-top: 30px;">
+  <a href="http://localhost:5000/home2" class="back-btn">← Go Back</a>
+  <a href="/physics/history" class="chat-history-link">View Chat History →</a>
+</div>
+
+  </div>
+
+  <script>
+    document.getElementById("start-btn").addEventListener("click", function () {
+      fetch("/process_speech", { method: "POST" })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("response").innerText = data.message;
+        })
+        .catch(error => console.error("Error:", error));
+    });
+  </script>
+</body>
+</html>
