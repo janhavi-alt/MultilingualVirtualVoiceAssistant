@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('/static/home-bg.jpg') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.book-logo {
+    width: 50px;
+    height: 50px;
+    animation: scrollPages 3s infinite linear;
+}
+
+@keyframes scrollPages {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Subject Modules */
+.modules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.module {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    border: 5px solid white;
+}
+
+/* Unique colors for each subject */
+.module:nth-child(1) { /* Physics */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.module:nth-child(2) { /* Chemistry */
+    background: linear-gradient(135deg, #ff5733, #ff914d);
+}
+
+.module:nth-child(3) { /* Maths */
+    background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.module:nth-child(4) { /* Biology */
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+
+.module:nth-child(5) { /* Camera Text-to-Speech */
+    background: linear-gradient(135deg, #673ab7, #9575cd);
+}
+
+.module:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Back Button */
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.back-button button {
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Blue gradient */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.back-button button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modules {
+        flex-direction: column;
+        align-items: center;
+    }
+}

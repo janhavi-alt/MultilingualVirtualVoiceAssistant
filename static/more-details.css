@@ -1,0 +1,71 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab); /* Dark gradient */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: #2c2c2c;
+    color: #ffeb3b;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Module Sections */
+.module {
+    background: #2a2a2a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 700px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.module:hover {
+    transform: scale(1.05);
+}
+
+/* Module Titles */
+.module h2 {
+    color: #ffca28;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Module Text */
+.module p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+}
+
+footer a {
+    text-decoration: none;
+    background: #ffeb3b;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+footer a:hover {
+    background: #ffc107;
+}

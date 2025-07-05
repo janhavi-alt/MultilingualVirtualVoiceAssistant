@@ -1,0 +1,201 @@
+/* Welcome message styling */
+.welcome-message {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2a0845, #6441a5);
+    color: white;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff2e63;
+}
+
+/* Sign-In Button */
+.sign-in {
+    font-weight: bold;
+    background: #ff2e63;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.sign-in:hover {
+    background: #ff456a;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 500px;
+    text-align: left;
+    margin-top: -30px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: #ff2e63;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylish Divider */
+.divider {
+    height: 4px;
+    background: linear-gradient(to right, #ff2e63, #6441a5);
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 2px;
+    box-shadow: 0px 2px 10px rgba(255, 46, 99, 0.5);
+}
+
+/* Video Section */
+.video-demo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video-demo h2 {
+    margin-bottom: 20px;
+}
+
+.video-demo video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Flash Messages Styling */
+.flash {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: fit-content;
+    animation: fadeIn 0.6s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flash.success {
+    background-color: #28a745; /* green */
+    color: white;
+}
+
+.flash.error {
+    background-color: #dc3545; /* red */
+    color: white;
+}
+
+/* Fade-in animation for flash messages */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
