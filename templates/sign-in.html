@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signin-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+    }
+    button {
+      background: #c2185b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 1rem;
+      color: #c2185b;
+      text-decoration: none;
+    }
+    .flashes {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .success {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="signin-container">
+  <h2>Sign In</h2>
+
+  <!-- Flash message display -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class="flashes">
+        {% for category, message in messages %}
+          {% if category == 'error' %}
+            <li class="error">{{ message }}</li>
+          {% elif category == 'success' %}
+            <li class="success">{{ message }}</li>
+          {% else %}
+            <li>{{ message }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <form method="POST">
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Sign In</button>
+  </form>
+  <a href="{{ url_for('signup') }}">Don't have an account? Sign Up</a>
+</div>
+
+</body>
+</html>

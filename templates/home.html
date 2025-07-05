@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Virtual Assistant</title>
+
+    <!-- Corrected CSS Path -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome Icons -->
+</head>
+<body>
+    <div class="container">
+        <h1>Select the Subject</h1>
+
+        <div class="modules">
+            <div class="module" onclick="navigateTo('{{ url_for('run_physics') }}')">
+                <h2>Physics</h2>
+            </div>
+            <div class="module" onclick="navigateTo('{{ url_for('run_chemistry') }}')">
+                <h2>Chemistry</h2>
+            </div>
+            <div class="module" onclick="navigateTo('{{ url_for('run_math') }}')">
+                <h2>Maths</h2>
+            </div>
+            <div class="module" onclick="navigateTo('{{ url_for('run_biology') }}')">
+                <h2>Biology</h2>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="back-button">
+            <button onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        function navigateTo(module) {
+            window.location.href = module;
+        }
+
+        function goBack() {
+            // Redirects to index.html instead of using history
+            window.location.href = "{{ url_for('index') }}";
+        }
+    </script>
+</body>
+</html>

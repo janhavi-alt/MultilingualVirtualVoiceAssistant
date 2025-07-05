@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie Blogs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='blogs.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                
+                <li><a href="{{ url_for('blogs') }}" class="active">Blogs</a></li>
+                <li><a href="{{ url_for('contact') }}" class="active">Contact us</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="blog-container">
+        <h1>Latest Blogs</h1>
+        <div class="blogs">
+            <div class="blog-card">
+                <img src="{{ url_for('static', filename='blog1.jpg') }}" alt="Blog Image">
+                <h2>How AI is Revolutionizing Education</h2>
+                <p>Explore the role of artificial intelligence in modern education and how it's shaping the future of learning.</p>
+                <a href="https://www.scalacode.com/guides/multilingual-ai-assistants/">Read More</a>
+            </div>
+            
+            <div class="blog-card">
+                <img src="{{ url_for('static', filename='blog2.jpg') }}" alt="Blog Image">
+                <h2>Multilingual Learning: Breaking Language Barriers</h2>
+                <p>Discover how multilingual virtual assistants are making education more accessible worldwide.</p>
+                <a href="https://www.haptik.ai/blog/building-multilingual-chatbots/">Read More</a>
+            </div>
+            
+            <div class="blog-card">
+                <img src="{{ url_for('static', filename='blog3.jpg') }}" alt="Blog Image">
+                <h2>Voice Assistants in Education</h2>
+                <p>Learn how voice technology is transforming interactive learning experiences.</p>
+                <a href="https://botpress.com/blog/voice-assistant">Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

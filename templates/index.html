@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li>
+                {% if username %}
+                    <a href="{{ url_for('home') }}"><i class="fas fa-robot"></i><span>Ask Me</span></a>
+                {% else %}
+                    <a href="{{ url_for('signin') }}"><i class="fas fa-robot"></i><span>Ask Me</span></a>
+                {% endif %}
+            </li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+             <li><a href="{{ url_for('blogs') }}">Blogs</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            {% if username %}
+                <li><a href="{{ url_for('logout') }}">Logout ({{ username }})</a></li>
+            {% else %}
+                <li><a href="{{ url_for('signin') }}">Sign In</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Edugenie - Virtual Multilingual Voice Assistant</h1>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <p class="flash {{ category }}">{{ message }}</p>
+            {% endfor %}
+          {% elif username %}
+           <p class="welcome-message">👋 Welcome back, <strong>{{ username }}</strong>! How can I assist you today?</p>
+
+          {% else %}
+            <p>AI-Powered Learning Assistant for Seamless Multilingual Education.</p>
+          {% endif %}
+        {% endwith %}
+
+        <div class="buttons">
+            <a href="{{ url_for('more_details') }}" class="btn primary">More details</a>
+            <a href="{{ url_for('static', filename='demo.mp4') }}" class="btn secondary" target="_blank">View demo</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='home1.jpg') }}" alt="Voice Assistant Illustration">
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="video-demo">
+    <h2>Here is how the voice assistant works</h2>
+    <video controls width="800">
+        <source src="{{ url_for('static', filename='app-demo.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+</body>
+</html>
