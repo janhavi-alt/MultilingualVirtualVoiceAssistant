@@ -1,0 +1,337 @@
+[
+    {
+        "question": "व्हाय दोएस की फ्लोट ओं वॉटर",
+        "answer": "Because ice is less dense than water."
+    },
+    {
+        "question": "बर्फ पानी पर क्यों तैरता है?",
+        "answer": "क्योंकि बर्फ पानी से कम घना होता है।"
+    },
+    {
+        "question": "बर्फ पाण्यावर का तरंग तो",  
+        "answer": "कारण बर्फ पाण्यापेक्षा कमी घन असतो."
+    },
+    {
+        "question": "Why is the sky blue?",
+        "answer": "Because of the scattering of sunlight by Earth's atmosphere."
+    },
+    {
+        "question": "व्हाई इस द स्काई ब्लू",
+        "answer": "Because of the scattering of sunlight by Earth's atmosphere."
+    },
+    {
+        "question": "आकाश नीला क्यों दिखता है?",
+        "answer": "क्योंकि पृथ्वी के वातावरण द्वारा सूर्य के प्रकाश का प्रकीर्णन होता है।"
+    },
+    
+    {
+        "question": "Why do objects fall to the ground?",
+        "answer": "Due to Earth's gravitational pull."
+    },
+
+    {
+        "question": "व्हाय दो ऑब्जेक्ट्स फॉल ओं थे ग्राउंड", 
+        "answer": "Due to Earth's gravitational pull."
+    },
+    {
+        "question": "वस्तुएं जमीन पर क्यों गिरती है", 
+        "answer": "क्योंकि पृथ्वी का गुरुत्वाकर्षण उन्हें आकर्षित करता है।"
+    },
+    {
+        "question": "वास्तु जमीनी व का पड़ता है?", 
+        "answer": "कारण पृथ्वीचे गुरुत्वाकर्षण त्यांना आकर्षित करते."
+    },
+    {
+        "question": "What is the speed of light?", 
+        "answer": "299,792,458 meters per second."
+    },
+   {
+        "question": "व्हाट इस द स्पीड ऑफ़ लाइट", 
+        "answer": "299,792,458 meters per second."
+    },
+    {
+        "question": "प्रकाश की गति कितनी है?",
+        "answer": "299,792,458 मीटर प्रति सेकंड।"
+    },
+    {
+        "question": "प्रकाश वेज किती आहे",  
+        "answer": "299,792,458 मीटर प्रति सेकंद."
+    },
+    {
+        "question": "Why do we see a rainbow?",
+        "answer": "Due to the refraction, dispersion, and reflection of sunlight in water droplets."
+    },
+    {
+        "question": "व्हाय दो वे सी ए रेनबो", 
+        "answer": "Due to the refraction, dispersion, and reflection of sunlight in water droplets."
+    },
+    {
+        "question": "हम इंद्रधनुष क्यों देखते हैं?",
+        "answer": "क्योंकि पानी की बूंदों में सूर्य के प्रकाश का अपवर्तन, विभेदन और परावर्तन होता है।"
+    },
+    {
+        "question": "अपन इंद्रधनुष का महत्व",
+        "answer": "कारण पाण्याच्या थेंबांमध्ये सूर्यप्रकाशाचे अपवर्तन, विकिरण आणि परावर्तन होते."
+    },
+    {
+        "question": "व्हाट इज़ न्यूटन'स फर्स्ट लॉ?",
+        "answer": "An object remains in uniform motion unless acted upon by a force."
+    },
+    {
+        "question": "न्यूटन का पहला नियम क्या है?",
+        "answer": "कोई वस्तु तब तक गति में रहती है जब तक उस पर बल नहीं लगता।"
+    },
+    {
+        "question": "न्यूटनचा पहिला नियम काय आहे?",
+        "answer": "कोणतीही वस्तू बल लागू न केल्यास एकसंध गतीने चालू राहते."
+    },
+
+    {
+        "question": "व्हाट इज़ द फॉर्मुला फॉर फोर्स?",
+        "answer": "Force = Mass × Acceleration (F = ma)."
+    },
+    {
+        "question": "बल का सूत्र क्या है?",
+        "answer": "बल = द्रव्यमान × त्वरण (F = ma)."
+    },
+    {
+        "question": "बलाचे सूत्र काय आहे?",
+        "answer": "बल = वस्तुमान × त्वरण (F = ma)."
+    },
+
+    {
+        "question": "व्हाट इज़ द यूनिट ऑफ फोर्स?",
+        "answer": "Newton (N)."
+    },
+    {
+        "question": "बल की इकाई क्या है?",
+        "answer": "न्यूटन (N)।"
+    },
+    {
+        "question": "बलाची एकक काय आहे?",
+        "answer": "न्यूटन (N)."
+    },
+
+    {
+        "question": "व्हाट इज़ काइनेटिक एनर्जी?",
+        "answer": "Energy due to motion, given by ½mv²."
+    },
+    {
+        "question": "गतिज ऊर्जा क्या है?",
+        "answer": "गति के कारण उत्पन्न ऊर्जा, सूत्र: ½mv²।"
+    },
+    {
+        "question": "गतिक ऊर्जा काय आहे?",
+        "answer": "गतीमुळे मिळणारी ऊर्जा, सूत्र: ½mv²."
+    },
+
+    {
+        "question": "व्हाट इज़ ओहम्स लॉ?",
+        "answer": "V = IR (Voltage = Current × Resistance)."
+    },
+    {
+        "question": "ओम का नियम क्या है?",
+        "answer": "V = IR (वोल्टेज = करंट × प्रतिरोध)।"
+    },
+    {
+        "question": "ओहमचा नियम काय आहे?",
+        "answer": "V = IR (दाब = विद्युतप्रवाह × प्रतिकार)."
+    },
+
+    {
+        "question": "व्हाट इज़ द यूनिट ऑफ करंट?",
+        "answer": "Ampere (A)."
+    },
+    {
+        "question": "धारा की इकाई क्या है?",
+        "answer": "एम्पीयर (A)।"
+    },
+    {
+        "question": "विद्युत प्रवाहाचे एकक काय आहे?",
+        "answer": "अँपिअर (A)."
+    },
+    {
+        "question": "व्हाट इज़ पोटेंशियल एनर्जी?",
+        "answer": "Stored energy due to position, given by mgh."
+    },
+    {
+        "question": "स्थितिज ऊर्जा क्या है?",
+        "answer": "स्थान के कारण संग्रहीत ऊर्जा, सूत्र: mgh।"
+    },
+    {
+        "question": "स्थितिज ऊर्जा काय आहे?",
+        "answer": "स्थितीमुळे साठवलेली ऊर्जा, सूत्र: mgh."
+    },
+
+    {
+        "question": "व्हाट इज़ वर्क इन फिजिक्स?",
+        "answer": "Work = Force × Distance × cos(θ)."
+    },
+    {
+        "question": "भौतिकी में कार्य क्या है?",
+        "answer": "कार्य = बल × दूरी × cos(θ)।"
+    },
+    {
+        "question": "भौतिकशास्त्रात काम काय आहे?",
+        "answer": "काम = बल × अंतर × cos(θ)."
+    },
+
+    {
+        "question": "व्हाट इज़ पॉवर?",
+        "answer": "Power is the rate of doing work, P = Work/Time."
+    },
+    {
+        "question": "शक्ति क्या है?",
+        "answer": "कार्य करने की दर, P = कार्य/समय।"
+    },
+    {
+        "question": "शक्ती म्हणजे काय?",
+        "answer": "काम करण्याचा दर, P = काम/वेळ."
+    },
+
+    {
+        "question": "व्हाट इज़ डिस्प्लेसमेंट?",
+        "answer": "The shortest distance from initial to final position."
+    },
+    {
+        "question": "विस्थापन क्या है?",
+        "answer": "प्रारंभिक से अंतिम स्थिति तक की न्यूनतम दूरी।"
+    },
+    {
+        "question": "स्थानांतर काय आहे?",
+        "answer": "सुरुवातीच्या स्थानापासून अंतिम स्थानापर्यंतचे लहानतम अंतर."
+    },
+
+    {
+        "question": "व्हाट इज़ डिफरेंस बिटवीन स्पीड एंड वेलॉसिटी?",
+        "answer": "Speed is scalar; velocity is vector."
+    },
+    {
+        "question": "गति और वेग में क्या अंतर है?",
+        "answer": "गति अदिश है जबकि वेग सदिश है।"
+    },
+    {
+        "question": "वेग आणि गतीत काय फरक आहे?",
+        "answer": "गती ही अदिश आहे आणि वेग हा सदिश आहे."
+    },
+
+    {
+        "question": "व्हाट इज़ फ्री फॉल?",
+        "answer": "Motion under gravity with no other force acting."
+    },
+    {
+        "question": "मुक्तपतन क्या है?",
+        "answer": "केवल गुरुत्वाकर्षण के कारण होने वाली गति।"
+    },
+    {
+        "question": "मुक्तपतन म्हणजे काय?",
+        "answer": "फक्त गुरुत्वाकर्षणामुळे होणारी हालचाल."
+    },
+
+    {
+        "question": "व्हाट इज़ इलेक्ट्रिक रेसिस्टेंस?",
+        "answer": "Opposition to the flow of electric current."
+    },
+    {
+        "question": "विद्युत प्रतिरोध क्या है?",
+        "answer": "विद्युत धारा के प्रवाह का विरोध।"
+    },
+    {
+        "question": "विद्युत प्रतिकार म्हणजे काय?",
+        "answer": "विद्युत प्रवाहाला होणारा विरोध."
+    },
+
+    {
+        "question": "व्हाट इज़ द फॉर्मुला फॉर इलेक्ट्रिक पॉवर?",
+        "answer": "Power = Voltage × Current (P = VI)."
+    },
+    {
+        "question": "विद्युत शक्ति का सूत्र क्या है?",
+        "answer": "शक्ति = वोल्टेज × करंट (P = VI)।"
+    },
+    {
+        "question": "विद्युत शक्तीचे सूत्र काय आहे?",
+        "answer": "शक्ती = दाब × विद्युतप्रवाह (P = VI)."
+    },
+  { "question": "एकचा लॉग किती आहे?", "answer": "0.0000" },
+  { "question": "दोनचा लॉग किती आहे?", "answer": "0.3010" },
+  { "question": "तीनचा लॉग किती आहे?", "answer": "0.4771" },
+  { "question": "चारचा लॉग किती आहे?", "answer": "0.6021" },
+  { "question": "पाचचा लॉग किती आहे?", "answer": "0.6990" },
+  { "question": "सहा चा लॉग किती आहे?", "answer": "0.7782" },
+  { "question": "सातचा लॉग किती आहे?", "answer": "0.8451" },
+  { "question": "आठचा लॉग किती आहे?", "answer": "0.9031" },
+  { "question": "नऊचा लॉग किती आहे?", "answer": "0.9542" },
+  { "question": "दहा चा लॉग किती आहे?", "answer": "1.0000" },
+  { "question": "अकराचा लॉग किती आहे?", "answer": "1.0414" },
+  { "question": "बाराचा लॉग किती आहे?", "answer": "1.0792" },
+  { "question": "तेराचा लॉग किती आहे?", "answer": "1.1139" },
+  { "question": "चौदाचा लॉग किती आहे?", "answer": "1.1461" },
+  { "question": "पंधराचा लॉग किती आहे?", "answer": "1.1761" },
+  { "question": "सोळाचा लॉग किती आहे?", "answer": "1.2041" },
+  { "question": "सतरा चा लॉग किती आहे?", "answer": "1.2304" },
+  { "question": "अठरा चा लॉग किती आहे?", "answer": "1.2553" },
+  { "question": "एकोणीसचा लॉग किती आहे?", "answer": "1.2788" },
+  { "question": "वीसचा लॉग किती आहे?", "answer": "1.3010" },
+
+  { "question": "व्हाट इज लॉग ऑफ वन?", "answer": "0.0000" },
+  { "question": "लॉग 1 क्या है?", "answer": "0.0000" },
+
+  { "question": "व्हाट इज लॉग ऑफ टू?", "answer": "0.3010" },
+  { "question": "लॉग 2 क्या है?", "answer": "0.3010" },
+
+  { "question": "व्हाट इज लॉग ऑफ थ्री?", "answer": "0.4771" },
+  { "question": "लॉग 3 क्या है?", "answer": "0.4771" },
+
+  { "question": "व्हाट इज लॉग ऑफ फोर?", "answer": "0.6021" },
+  { "question": "लॉग 4 क्या है?", "answer": "0.6021" },
+
+  { "question": "व्हाट इज लॉग ऑफ फाइव?", "answer": "0.6990" },
+  { "question": "लॉग 5 क्या है?", "answer": "0.6990" },
+
+  { "question": "व्हाट इज लॉग ऑफ सिक्स?", "answer": "0.7782" },
+  { "question": "लॉग 6 क्या है?", "answer": "0.7782" },
+
+  { "question": "व्हाट इज लॉग ऑफ सेवन?", "answer": "0.8451" },
+  { "question": "लॉग 7 क्या है?", "answer": "0.8451" },
+
+  { "question": "व्हाट इज लॉग ऑफ एट?", "answer": "0.9031" },
+  { "question": "लॉग 8 क्या है?", "answer": "0.9031" },
+
+  { "question": "व्हाट इज लॉग ऑफ नाईन?", "answer": "0.9542" },
+  { "question": "लॉग 9 क्या है?", "answer": "0.9542" },
+
+  { "question": "व्हाट इज लॉग ऑफ टेन?", "answer": "1.0000" },
+  { "question": "लॉग 10 क्या है?", "answer": "1.0000" },
+
+  { "question": "व्हाट इज लॉग ऑफ इलेव्हन?", "answer": "1.0414" },
+  { "question": "लॉग 11 क्या है?", "answer": "1.0414" },
+
+  { "question": "व्हाट इज लॉग ऑफ ट्वेल्व?", "answer": "1.0792" },
+  { "question": "लॉग 12 क्या है?", "answer": "1.0792" },
+
+  { "question": "व्हाट इज लॉग ऑफ थर्टीन?", "answer": "1.1139" },
+  { "question": "लॉग 13 क्या है?", "answer": "1.1139" },
+
+  { "question": "व्हाट इज लॉग ऑफ फोर्तीन?", "answer": "1.1461" },
+  { "question": "लॉग 14 क्या है?", "answer": "1.1461" },
+
+  { "question": "व्हाट इज लॉग ऑफ फिफ्टीन?", "answer": "1.1761" },
+  { "question": "लॉग 15 क्या है?", "answer": "1.1761" },
+
+  { "question": "व्हाट इज लॉग ऑफ सिक्स्टीन?", "answer": "1.2041" },
+  { "question": "लॉग 16 क्या है?", "answer": "1.2041" },
+
+  { "question": "व्हाट इज लॉग ऑफ सेव्हन्टीन?", "answer": "1.2304" },
+  { "question": "लॉग 17 क्या है?", "answer": "1.2304" },
+
+  { "question": "व्हाट इज लॉग ऑफ एटीन?", "answer": "1.2553" },
+  { "question": "लॉग 18 क्या है?", "answer": "1.2553" },
+
+  { "question": "व्हाट इज लॉग ऑफ नाइन्टीन?", "answer": "1.2788" },
+  { "question": "लॉग 19 क्या है?", "answer": "1.2788" },
+
+  { "question": "व्हाट इज लॉग ऑफ ट्वेंटी?", "answer": "1.3010" },
+  { "question": "लॉग 20 क्या है?", "answer": "1.3010" }
+
+]

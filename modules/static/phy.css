@@ -1,0 +1,163 @@
+/* Basic CSS for the Physics Voice Assistant Page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/static/physics.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Telescope Light Effect */
+@keyframes telescopeLight {
+    0% {
+        background: radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    50% {
+        background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    100% {
+        background: radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+}
+
+/* Light Effect Overlay */
+.telescope-light {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: telescopeLight 6s infinite linear;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+/* Main Container - White Background */
+.container {
+    background: rgba(255, 255, 255, 1); /* Solid white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #f1c40f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(241, 196, 15, 0.8);
+}
+
+/* Paragraph Text */
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    background: radial-gradient(circle at center, #ffcc00, #ff9900, #ff6600);
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.3s;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    animation: pulseEffect 2s infinite alternate;
+}
+
+/* Button Glow Animation */
+@keyframes pulseEffect {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 204, 0, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    }
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Animated Light Flash on Button Click */
+button::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.2);
+    top: -25%;
+    left: -25%;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.3s ease-out;
+}
+
+button:active::before {
+    transform: scale(1);
+    transition: transform 0s;
+}
+
+/* Response Box */
+#response-container {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+}
+/* Styled Buttons for Go Back & Chat History - Sky Blue Theme */
+.actions a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Sky Blue Gradient */
+    box-shadow: 0 0 15px rgba(0, 183, 255, 0.7);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.actions a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 183, 255, 1);
+    background: linear-gradient(135deg, #33d6ff, #0099ff);
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "question": "व्हाट इस पायथागोरस थेओरम",
+    "answer": "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."
+  },
+  {
+    "question": "पाइथागोरस प्रमेय क्या है",
+    "answer": "पाइथागोरस प्रमेय कहता है कि समकोण त्रिभुज में कर्ण का वर्ग अन्य दो भुजाओं के वर्ग के योग के बराबर होता है।"
+  },
+  {
+    "question": "पायथागोरस प्रमेय म्हणजे काय",
+    "answer": "पायथागोरस प्रमेय सांगतो की समकोण त्रिकोणात कर्णाचे वर्ग हे उर्वरित दोन बाजूंच्या वर्गाच्या बेरजेच्या बरोबर असते।"
+  },
+  {
+    "question": "what is derivative",
+    "answer": "A derivative represents the rate of change of a function with respect to a variable."
+  },
+  {
+    "question": "व्हाट इस डेरिवेटिव",
+    "answer": "A derivative represents the rate of change of a function with respect to its variable."
+  },
+  {
+    "question": "डेरिवेटिव क्या है",
+    "answer": "डेरिवेटिव एक फलन के परिवर्तन की दर को दर्शाता है।"
+  },
+  {
+    "question": "साधित म्हणजे काय",
+    "answer": "साधित म्हणजे एखाद्या फलनाचा त्याच्या चलाच्या दृष्टीने बदलण्याचा दर."
+  },
+  {
+    "question": "व्हाट इस इंटीग्रल",
+    "answer": "An integral represents the area under the curve of a function over a given interval."
+  },
+  {
+    "question": "इंटीग्रल क्या है",
+    "answer": "इंटीग्रल एक फलन के वक्र के नीचे दिए गए अंतराल पर क्षेत्रफल को दर्शाता है।"
+  },
+  {
+    "question": "समाकलन म्हणजे काय",
+    "answer": "समाकलन म्हणजे फलनाच्या वक्राखालील क्षेत्रफळ."
+  },
+  {
+    "question": "व्हाट इस स्क्वेअर रूट ऑफ 16",
+    "answer": "The square root of 16 is 4."
+  },
+  {
+    "question": "१६ का वर्गमूल क्या है",
+    "answer": "१६ का वर्गमूल ४ होता है।"
+  },
+  {
+    "question": "१६ चा वर्गमूळ काय आहे",
+    "answer": "१६ चा वर्गमूळ ४ आहे."
+  },
+  {
+    "question": "व्हाट इस10 प्लस 20",
+    "answer": "10 plus 20 equals 30."
+  },
+  {
+    "question": "१० प्लस २० क्या है",
+    "answer": "१० प्लस २० बराबर ३०।"
+  },
+  {
+    "question": "१० प्लस २० किती आहे",
+    "answer": "१० प्लस २० = ३०."
+  },
+  {
+    "question": "व्हाट इस क्यूब रूट ऑफ 27",
+    "answer": "The cube root of 27 is 3."
+  },
+  {
+    "question": "२७ का घनमूल क्या है",
+    "answer": "२७ का घनमूल ३ होता है।"
+  },
+  {
+    "question": "२७ चा घनमूळ काय आहे",
+    "answer": "२७ चा घनमूळ ३ आहे."
+  },
+  {
+    "question": "व्हाट इस स्क्वेअर ऑफ 12",
+    "answer": "The square of 12 is 144."
+  },
+  {
+    "question": "१२ का वर्ग क्या है",
+    "answer": "१२ का वर्ग १४४ होता है।"
+  },
+  {
+    "question": "१२ चा वर्ग काय आहे",
+    "answer": "१२ चा वर्ग १४४ आहे."
+  },
+  {
+    "question": "व्हाट इस 50 डिवाइडेड बाय 5",
+    "answer": "50 divided by 5 is 10."
+  },
+  {
+    "question": "५० बटा ५ क्या है",
+    "answer": "५० बटा ५ बराबर १०।"
+  },
+  {
+    "question": "५० भागिले ५ किती",
+    "answer": "५० भागिले ५ = १०."
+  },
+  {
+    "question": "व्हाट इस 7 स्क्वेअर",
+    "answer": "7 squared is 49."
+  },
+  {
+    "question": "७ का वर्ग क्या है",
+    "answer": "७ का वर्ग ४९ होता है।"
+  },
+  {
+    "question": "७ चा वर्ग काय आहे",
+    "answer": "७ चा वर्ग ४९ आहे."
+  },
+  {
+    "question": "व्हाट इस क्यूब ऑफ 5",
+    "answer": "The cube of 5 is 125."
+  },
+  {
+    "question": "५ का घनफल क्या है",
+    "answer": "५ का घनफल १२५ होता है।"
+  },
+  {
+    "question": "५ चा घन काय आहे",
+    "answer": "५ चा घन १२५ आहे."
+  },
+  {
+    "question": "व्हाट इस डेरिवेटिव ऑफ x स्क्वेअर",
+    "answer": "The derivative of x squared is 2x."
+  },
+  {
+    "question": "x वर्ग का अवकलज क्या है",
+    "answer": "x वर्ग का अवकलज 2x होता है।"
+  },
+  {
+    "question": "x चा वर्ग याचं अवकलन काय आहे",
+    "answer": "x चा वर्ग याचं अवकलन 2x आहे."
+  },
+  {
+    "question": "व्हाट इस इंटीग्रल ऑफ x",
+    "answer": "The integral of x is x²/2 + C."
+  },
+  {
+    "question": "x का समाकलन क्या है",
+    "answer": "x का समाकलन x²/2 + C होता है।"
+  },
+  {
+    "question": "x चं समाकलन काय आहे",
+    "answer": "x चं समाकलन x²/2 + C आहे."
+  }
+]
