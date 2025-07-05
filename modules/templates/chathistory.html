@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat History</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .timestamp {
+            font-size: 13px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .back-btn,
+        .delete-btn,
+        .download-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover,
+        .delete-btn:hover,
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hello, {{ session.username }}</h2>
+        <h1>Chat History</h1>
+
+        {% if chats %}
+            <ul>
+                {% for chat in chats %}
+                    <li>
+                        <strong>You:</strong> {{ chat.user_query }}<br>
+                        <strong>Assistant:</strong> {{ chat.answer }}
+                        <div class="timestamp">
+                            {{ chat.timestamp.strftime("%d-%m-%Y %I:%M %p") }}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No chat history available.</p>
+        {% endif %}
+
+        <div class="actions">
+            <form action="{{ url_for('clear_history') }}" method="post" style="display:inline;">
+                <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete your chat history?')">Delete Chat History</button>
+            </form>
+            <a href="{{ url_for('index') }}" class="back-btn">Back to Assistant</a>
+            <a href="{{ url_for('download_csv') }}" class="download-btn">Download CSV</a>
+            <a href="{{ url_for('download_pdf') }}" class="download-btn">Download PDF</a>
+        </div>
+    </div>
+</body>
+</html>
