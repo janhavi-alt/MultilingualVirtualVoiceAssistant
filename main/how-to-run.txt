@@ -1,0 +1,12 @@
+Download Python 3.8:
+link:👉 python-3.8.10-amd64.exe  
+✅ Check the box that says:
+[✓] Add Python 3.8 to PATH
+Verify Installation
+python --version
+It should show:
+Python 3.8.10
+
+Go to cmd:
+cd D:\VoiceAssistantProjectFinal
+pip install -r requirements.txt
