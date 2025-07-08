@@ -1,0 +1,66 @@
+project-deployment using Waitress (for Windows):
+1. Install Waitress
+Open your command prompt and run:
+pip install waitress
+
+2. Modify how you run your app
+Instead of running:
+python app.py
+you will run Waitress from the command line like this:
+waitress-serve --host=0.0.0.0 --port=5000 app:app
+
+3. Test it
+Now open your browser on your laptop and go to:
+http://localhost:5000
+On your phone (connected to the same Wi-Fi), open the browser and enter your laptop's local IP address (from ipconfig, e.g., 192.168.113.228):
+http://192.168.113.228:5000
+
+4. Troubleshooting tips
+Make sure Windows Firewall allows inbound connections on port 5000 (you might need to create a rule)
+
+Confirm both devices are on the same network
+
+Use 0.0.0.0 as host, NOT 127.0.0.1 or localhost (those only listen to local machine)
+
+Bonus: Running Waitress from a Python script
+You can also create a run_waitress.py file to run the app:
+
+from waitress import serve
+import app  # your flask app file without .py
+
+if __name__ == '__main__':
+    serve(app.app, host='0.0.0.0', port=5000)
+Then run:
+python run_waitress.py
+
+-----------------------------------------------------------------------
+
+Use ngrok (Best for Testing & Sharing Without Hosting)
+🔧 What it does:
+Ngrok exposes your local Flask app to the internet with a temporary public URL.
+
+💡 Steps:
+Install ngrok:
+Download it from: https://ngrok.com/download
+sign up and get the authentication token like this - 2xd0P3ScyJ6eVUZlT7BJtMwhGWb_5qNifwwkUkYbfBK3jG45A
+
+ngrok config add-authtoken 2xd0P3ScyJ6eVUZlT7BJtMwhGWb_5qNifwwkUkYbfBK3jG45A
+
+Run your Flask app with Waitress (or even the development server):
+waitress-serve --host=0.0.0.0 --port=5000 app:app
+Start ngrok:
+Open another terminal and run:
+ngrok http 5000
+You'll see something like:
+Forwarding    https://3b1f-142-250-67-78.ngrok.io -> http://localhost:5000
+Share this URL with anyone — they can access your app!
+
+------------------------------------------------------------------------
+cd D:\Janu_mscIT_P2\testing-proj
+ngrok start --all
+cd D:\Janu_mscIT_P2\testing-proj
+waitress-serve --host=0.0.0.0 --port=5000 app:app
+cd D:\Janu_mscIT_P2\testing-proj\modules
+waitress-serve --host=0.0.0.0 --port=5002 biology:app
+cd D:\VoiceAssistantProjectFinal
+cd D:\VoiceAssistantProjectFinal\modules
